@@ -2,14 +2,14 @@
 # vim: set fileencoding=utf-8
 # pylint:disable=line-too-long
 r""":mod:`{{cookiecutter.module}}` - {{cookiecutter.module_short_description}}
-#######################################
+######################################
 
 .. module:: {{cookiecutter.module}}
    :synopsis: {{cookiecutter.module_short_description}}
 .. moduleauthor:: {{cookiecutter.author}} <{{cookiecutter.email}}>
 
-Provide a detailed summary of the module Break down each subsystem and describe
-it's operation in detail
+Provide a detailed summary of the module. Break down each subsystem and
+describe it's operation in detail
 
 Command line options
 ********************

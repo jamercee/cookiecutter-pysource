@@ -30,7 +30,7 @@ __copyright__  = '{{cookiecutter.copyright}}'
 
 LOG = logging.getLogger('test{{cookiecutter.module}}')
 
-from {{cookiecutter.module}} import {{cookiecutter.module}}
+from {{cookiecutter.project_slug}} import {{cookiecutter.module}}
 
 
 class Test{{cookiecutter.module}}(unittest.TestCase):

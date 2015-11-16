@@ -1,6 +1,5 @@
 {
-    "module": "source.py",
-    "repo_name": "{{cookiecutter.module}}",
+    "module": "source",
     "module_short_description": "short module description",
     "version": "1.0",
     "release": "1.0.1",

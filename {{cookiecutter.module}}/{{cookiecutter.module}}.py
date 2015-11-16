@@ -1,12 +1,12 @@
 #!/usr/bin/env {{cookiecutter.python}}
 # vim: set fileencoding=utf-8
 # pylint:disable=line-too-long
-r""":mod:`@module@` - {{cookiecutter.module_short_description}}
+r""":mod:`{{cookiecutter.module}}` - {{cookiecutter.module_short_description}}
 #######################################
 
-.. module:: @module@
+.. module:: {{cookiecutter.module}}
    :synopsis: {{cookiecutter.module_short_description}}
-.. moduleauthor:: @author@ <@email@>
+.. moduleauthor:: {{cookiecutter.author}} <{{cookiecutter.email}}>
 
 Provide a detailed summary of the module Break down each subsystem and describe
 it's operation in detail
@@ -14,7 +14,7 @@ it's operation in detail
 Command line options
 ********************
 
-*usage:* ``@module@  [-?] [-d] ...``
+*usage:* ``{{cookiecutter.module}}  [-?] [-d] ...``
 
 Positional arguments
 ====================
@@ -35,7 +35,7 @@ Optional argument:
    Generate diagnotic logging.
 
 ..
-   @copyright@"""
+   {{cookiecutter.copyright}}"""
 # pylint:enable=line-too-long
 # ----------------------------------------------------------------------------
 # Standard library imports
@@ -47,12 +47,12 @@ import sys
 # Module level initializations
 # ----------------------------------------------------------------------------
 __version__    = '{{cookiecutter.release}}'
-__author__     = '@author@'
-__email__      = '@email@'
+__author__     = '{{cookiecutter.author}}'
+__email__      = '{{cookiecutter.email}}'
 __status__     = '(Development | Production | Testing | Migration)'
-__copyright__  = '@copyright@'
+__copyright__  = '{{cookiecutter.copyright}}'
 
-LOG = logging.getLogger('@module@')
+LOG = logging.getLogger('{{cookiecutter.module}}')
 
 
 def main():

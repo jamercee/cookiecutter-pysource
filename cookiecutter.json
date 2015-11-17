@@ -1,6 +1,7 @@
 {
     "module": "source",
     "module_short_description": "short module description",
+    "project": "",
     "version": "1.0",
     "release": "1.0.1",
     "python": "python2.7",

@@ -30,8 +30,9 @@ __copyright__  = '{{cookiecutter.copyright}}'
 
 LOG = logging.getLogger('test{{cookiecutter.module}}')
 
-# from MODULE_NAME import {{cookiecutter.module}}
-
+{% if cookiecutter.project|len %}
+from {{cookiecutter.project}} import {{cookiecutter.module}}
+{% else %}
 
 class Test{{cookiecutter.module}}(unittest.TestCase):
     r"""{{cookiecutter.module}} unittest test case"""

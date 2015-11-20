@@ -47,6 +47,13 @@ class Test{{cookiecutter.module}}(unittest.TestCase):
         r"""tear down test fixture"""
         pass
 
+{% if cookiecutter.project %}
+    def test_version(self):
+        r"""confirm version exists"""
+        self.assertTrue({{cookiecutter.module}}, '__version__')
+{% endif %}
+
+
 if __name__ == '__main__':
     import sys
     sys.exit(unittest.main())

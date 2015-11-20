@@ -32,7 +32,7 @@ LOG = logging.getLogger('test{{cookiecutter.module}}')
 
 {% if cookiecutter.project|len %}
 from {{cookiecutter.project}} import {{cookiecutter.module}}
-{% else %}
+{% endif %}
 
 class Test{{cookiecutter.module}}(unittest.TestCase):
     r"""{{cookiecutter.module}} unittest test case"""

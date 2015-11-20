@@ -30,7 +30,7 @@ __copyright__  = '{{cookiecutter.copyright}}'
 
 LOG = logging.getLogger('test{{cookiecutter.module}}')
 
-{% if cookiecutter.project|len %}
+{% if cookiecutter.project %}
 from {{cookiecutter.project}} import {{cookiecutter.module}}
 {% endif %}
 

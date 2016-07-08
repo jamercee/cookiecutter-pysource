@@ -22,14 +22,16 @@ import unittest
 # ----------------------------------------------------------------------------
 # Module level initializations
 # ----------------------------------------------------------------------------
-__version__    = '{{cookiecutter.release}}'
-__author__     = '{{cookiecutter.author}}'
-__email__      = '{{cookiecutter.email}}'
-__status__     = 'Testing'
-__copyright__  = '{{cookiecutter.copyright}}'
+__version__ = '{{cookiecutter.release}}'
+__author__ = '{{cookiecutter.author}}'
+__email__ = '{{cookiecutter.email}}'
+__status__ = 'Testing'
+__copyright__ = '{{cookiecutter.copyright}}'
 
 LOG = logging.getLogger('test{{cookiecutter.module}}')
 
+# pylint: disable=wrong-import-position
+# pylint: disable=wrong-import-order
 import {{cookiecutter.module}}
 
 

@@ -40,6 +40,7 @@ Optional argument:
 # ----------------------------------------------------------------------------
 # Standard library imports
 # ----------------------------------------------------------------------------
+import argparse
 import logging
 import sys
 
@@ -57,7 +58,18 @@ LOG = logging.getLogger('{{cookiecutter.module}}')
 
 def main():
     r"""main process driver"""
-    pass
+
+    logging.basicConfig(level=logging.INFO,
+            format='%(asctime)s %(message)s',
+            datefmt='%m-%d %H:%M:%S')
+
+    parser = argparse.ArgumentParser(
+            description='{{cookiecutter.module_short_description}}')
+    parser.add_argument('parm1',
+            help='Brief description of parm1.')
+
+    args = parser.parse_args()
+
 
 if __name__ == '__main__':
     try:

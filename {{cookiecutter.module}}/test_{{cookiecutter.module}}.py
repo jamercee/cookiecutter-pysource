@@ -45,7 +45,6 @@ class Test{{cookiecutter.module}}(unittest.TestCase):
 
     def tearDown(self):
         r"""tear down test fixture"""
-
 {% if cookiecutter.project %}
     def test_version(self):
         r"""confirm version exists"""
